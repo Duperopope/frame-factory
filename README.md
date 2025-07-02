@@ -1,10 +1,13 @@
-# FRAME Factory v0.1.0
+# 🚀 FRAME Factory - Advanced Warframe Build Optimizer
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen)](https://duperopope.github.io/frame-factory/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## 🎯 Project Overview
 
 FRAME Factory is a professional, modular Warframe Build Optimizer that combines beautiful design with cutting-edge technology. Built from the ground up with scalability and internationalization in mind.
 
-## ✨ Key Improvements
+## ✨ Key Features
 
 ### 🏗️ **Complete Modularization**
 - **Separated JavaScript into logical modules:**
@@ -18,7 +21,7 @@ FRAME Factory is a professional, modular Warframe Build Optimizer that combines 
 - **Hybrid translation approach:**
   - Interface elements: Local JSON files
   - Game content: Direct from Warframe API in user's language
-- **12 supported languages:** English, Français, Deutsch, Español, Italiano, 日本語, 한국어, Polski, Português, Русский, 中文, Українська
+- **11 supported languages:** English, Français, Deutsch, Español, Italiano, 한국어, Polski, Português, Русский, Українська, 中文
 - **Smart fallback system** with English as default
 - **Real-time language switching** without page reload
 
@@ -35,6 +38,44 @@ FRAME Factory is a professional, modular Warframe Build Optimizer that combines 
 - **Event-driven architecture** with custom events
 - **Error boundaries** and graceful degradation
 - **Modular CSS** structure maintained
+
+## 🚀 Getting Started
+
+### Development Server
+```bash
+# Start local development server
+python server.py
+
+# Or use Python's built-in server
+python -m http.server 8000
+
+# Open in browser
+http://localhost:8000
+```
+
+### Features Demonstrated
+1. **Multi-language interface** - Switch between 11 languages
+2. **Real-time API data** - Live Warframe item database
+3. **Advanced tooltips** - Hover over navigation tabs
+4. **Optimization simulation** - Complete build optimization workflow
+5. **Responsive design** - Works on all screen sizes
+
+## 🎮 Warframe API Integration
+
+### Supported Content Types
+- **Warframes** - All playable characters with localized names
+- **Primary Weapons** - Complete weapon database
+- **Secondary Weapons** - Sidearms and pistols
+- **Melee Weapons** - Close combat weapons
+- **Mods** - Enhancement modules
+- **Arcanes** - Special enhancement items
+
+### Language Support
+The application automatically fetches content in the user's selected language:
+- Item names and descriptions
+- Categories and types
+- Statistical information
+- All localized using official Warframe translations
 
 ## 📁 Project Structure
 
@@ -55,9 +96,7 @@ FRAME Factory is a professional, modular Warframe Build Optimizer that combines 
 │   ├── fr.json             # French (complete)
 │   └── *.json              # Other languages
 ├── archives/               # Backup of original files
-│   ├── Warframebuilder.html
-│   └── Warframebuilder_BACKUP.html
-└── README.md              # This documentation
+└── server.py              # Development server with CORS
 ```
 
 ## 🔧 Technical Features
@@ -83,60 +122,10 @@ FRAME Factory is a professional, modular Warframe Build Optimizer that combines 
 - **State management** across components
 - **Notification system** for user feedback
 
-## 🚀 Getting Started
-
-### Development Server
-```bash
-# Start local development server
-python -m http.server 8000
-
-# Open in browser
-http://localhost:8000
-```
-
-### Features Demonstrated
-1. **Multi-language interface** - Switch between 12 languages
-2. **Real-time API data** - Live Warframe item database
-3. **Advanced tooltips** - Hover over navigation tabs
-4. **Optimization simulation** - Complete build optimization workflow
-5. **Responsive design** - Works on all screen sizes
-
-## 🎮 Warframe API Integration
-
-### Supported Content Types
-- **Warframes** - All playable characters with localized names
-- **Primary Weapons** - Complete weapon database
-- **Secondary Weapons** - Sidearms and pistols
-- **Melee Weapons** - Close combat weapons
-- **Mods** - Enhancement modules
-- **Arcanes** - Special enhancement items
-
-### Language Support
-The application automatically fetches content in the user's selected language:
-- Item names and descriptions
-- Categories and types
-- Statistical information
-- All localized using official Warframe translations
-
-## 🔮 Future Enhancements
-
-### Planned Features
-- **Build sharing system** with URL generation
-- **Advanced filtering** and sorting options
-- **Riven mod integration** with market data
-- **Build comparison tools**
-- **Export to game loadout format**
-
-### Technical Improvements
-- **Service Worker** for offline functionality
-- **Progressive Web App** features
-- **Build caching** and persistence
-- **Advanced optimization algorithms**
-
 ## 🏆 Achievement Summary
 
 ✅ **Complete modularization** while preserving interface  
-✅ **100% dynamic translation** with 12 languages  
+✅ **100% dynamic translation** with 11 languages  
 ✅ **Advanced tooltip system** with smooth UX  
 ✅ **Real-time Warframe API integration**  
 ✅ **Professional error handling** and fallbacks  
@@ -152,6 +141,10 @@ The application automatically fetches content in the user's selected language:
 4. **User Experience** - Smooth, professional interface
 5. **Internationalization** - True multi-language support
 6. **Developer Experience** - Well-documented, organized codebase
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
 
