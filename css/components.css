@@ -1,0 +1,74 @@
+/* Composants - Préservation exacte de tes styles */
+.tab-button {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
+}
+
+.item-card {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    transition: all 0.3s ease;
+}
+
+.item-card:hover {
+    border-color: var(--accent);
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.2);
+}
+
+.infinite-scroll {
+    max-height: 70vh;
+    overflow-y: auto;
+}
+
+.number-display {
+    font-family: 'Courier New', monospace;
+    background: var(--bg-tertiary);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--border);
+}
+
+.progress-container {
+    background: var(--bg-tertiary);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--accent), #ff6b8a);
+    transition: width 0.3s ease;
+    height: 100%;
+}
+
+.placeholder-image {
+    background: linear-gradient(135deg, var(--bg-tertiary), var(--border));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+}
+
+.loading-spinner {
+    border: 3px solid var(--border);
+    border-top: 3px solid var(--accent);
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.eta-display {
+    background: var(--bg-secondary);
+    border: 1px solid var(--accent);
+    color: var(--accent);
+}

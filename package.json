@@ -1,0 +1,42 @@
+{
+  "name": "frame-factory",
+  "version": "0.1.0",
+  "description": "FRAME Factory - Advanced Warframe Build Optimizer with Multi-language Support",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "build": "echo 'No build process needed for static files'",
+    "test": "echo 'No tests specified'"
+  },
+  "keywords": [
+    "warframe",
+    "build",
+    "optimizer",
+    "gaming",
+    "calculator",
+    "mods",
+    "weapons",
+    "warframes"
+  ],
+  "author": "FRAME Factory Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/frame-factory.git"
+  },
+  "bugs": {
+    "url": "https://github.com/username/frame-factory/issues"
+  },
+  "homepage": "https://github.com/username/frame-factory#readme",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
