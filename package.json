@@ -4,8 +4,8 @@
   "description": "FRAME Factory - Advanced Warframe Build Optimizer with Multi-language Support",
   "main": "index.html",
   "scripts": {
-    "start": "python -m http.server 8000",
-    "dev": "python -m http.server 8000",
+    "start": "http-server . -p 8000 -c-1 --cors",
+    "dev": "http-server . -p 8000 -c-1 --cors -o",
     "build": "echo 'No build process needed for static files'",
     "test": "echo 'No tests specified'"
   },
@@ -32,11 +32,13 @@
   "engines": {
     "node": ">=14.0.0"
   },
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "http-server": "^14.1.1"
+  },
   "browserslist": [
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "type": "commonjs"
 }
