@@ -1,4 +1,4 @@
-/* Thèmes - Préservation exacte de ton système */
+/* Theme Variables and Management */
 .dark-mode {
     --bg-primary: #1a1a2e;
     --bg-secondary: #16213e;
@@ -19,6 +19,7 @@
     --border: #e2e8f0;
 }
 
+/* Base Theme Classes */
 body {
     background: var(--bg-primary);
     color: var(--text-secondary);
@@ -31,3 +32,41 @@ body {
 .text-primary { color: var(--text-primary); }
 .text-secondary { color: var(--text-secondary); }
 .border-custom { border-color: var(--border); }
+
+/* Tab Button Styling */
+.tab-button {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.tab-button.active {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
+}
+
+.tab-button:hover:not(.active) {
+    background: var(--bg-tertiary);
+    border-color: var(--accent);
+}
+
+/* Category Button Styling */
+.category-btn {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    color: var(--text-secondary);
+    transition: all 0.3s ease;
+}
+
+.category-btn:hover {
+    background: var(--bg-tertiary);
+    border-color: var(--accent);
+}
+
+.category-btn.bg-accent {
+    background: var(--accent) !important;
+    color: white !important;
+    box-shadow: 0 4px 12px rgba(233, 69, 96, 0.3);
+}

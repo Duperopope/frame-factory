@@ -5,6 +5,46 @@ All notable changes to FRAME Factory will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.1.2] - 2025-07-03
+
+### 🎨 Enhanced Visual Design
+
+#### ✨ Added
+- **Enhanced theme system** with CSS variables for better consistency
+- **Improved visual components** extracted from Warframebuilde01.html
+- **Advanced button styling** with hover effects and transitions
+- **Enhanced progress bars** with gradient animations
+- **Loading spinners** with smooth animations
+- **Professional card components** with hover effects
+- **Better typography** and spacing consistency
+
+#### 🎯 Visual Improvements
+- **Theme variables** for consistent color management
+- **Smooth transitions** on all interactive elements
+- **Enhanced shadows** and border effects
+- **Improved button states** (hover, active, disabled)
+- **Better visual hierarchy** with improved contrast
+- **Professional loading states** and feedback
+
+#### 📁 File Structure Updates
+- `css/themes.css` - New theme management system
+- Enhanced `css/components.css` with visual improvements
+- Updated `index.html` with v0.1.2 branding
+
+## [0.1.1] - 2025-07-03
+
+### 🚀 GitHub Pages Deployment
+
+#### ✨ Added
+- **GitHub Pages deployment** workflow configuration
+- **Automatic deployment** on push to main branch
+- **Production-ready** hosting setup
+
+#### 🔧 Fixed
+- GitHub Pages configuration issues
+- Workflow deployment problems
+- Repository settings optimization
+
 ## [0.1.0] - 2025-07-03
 
 ### 🎉 Initial Release
