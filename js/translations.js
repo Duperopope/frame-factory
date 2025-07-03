@@ -80,7 +80,24 @@ class TranslationManager {
             if (el.tagName === 'INPUT' && el.type === 'text') {
                 el.placeholder = translation;
             } else {
-                el.textContent = translation;
+                // Préserver les icônes : ne remplacer que le texte, pas les éléments enfants
+                const iconElements = el.querySelectorAll('i, .fas, .far, .fab');
+                if (iconElements.length > 0) {
+                    // Si l'élément contient des icônes, chercher le span de texte
+                    const textSpan = el.querySelector('span[data-i18n]') || el.querySelector('span:not([class*="fa"])');
+                    if (textSpan) {
+                        textSpan.textContent = translation;
+                    } else {
+                        // Créer un nœud texte après les icônes
+                        const textNodes = Array.from(el.childNodes).filter(node => node.nodeType === Node.TEXT_NODE);
+                        if (textNodes.length > 0) {
+                            textNodes[textNodes.length - 1].textContent = ' ' + translation;
+                        }
+                    }
+                } else {
+                    // Pas d'icônes, remplacer normalement
+                    el.textContent = translation;
+                }
             }
         });
 
