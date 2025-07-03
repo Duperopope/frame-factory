@@ -451,15 +451,15 @@ class WarframeApp {
     }
 }
 
-// Initialisation de l'application au chargement du DOM
-document.addEventListener('DOMContentLoaded', async () => {
-    try {
-        window.warframeApp = new WarframeApp();
-        await window.warframeApp.initialize();
-    } catch (error) {
-        console.error('Failed to start Warframe Build Optimizer:', error);
-    }
-});
+// Initialisation de l'application au chargement du DOM - TEMPORAIREMENT DÉSACTIVÉ
+// document.addEventListener('DOMContentLoaded', async () => {
+//     try {
+//         window.warframeApp = new WarframeApp();
+//         await window.warframeApp.initialize();
+//     } catch (error) {
+//         console.error('Failed to start Warframe Build Optimizer:', error);
+//     }
+// });
 
 // Exposer des fonctions utiles pour le debug
 window.debugWarframe = () => {
