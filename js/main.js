@@ -49,6 +49,17 @@ class WarframeApp {
             window.uiManager.updateLanguageSelector();
         }
 
+        // Initialiser le Leaderboard Manager
+        if (window.leaderboardManager) {
+            await window.leaderboardManager.loadLeaderboard();
+            window.leaderboardManager.startAutoUpdate();
+        }
+
+        // Initialiser le Build Manager
+        if (window.buildManager) {
+            window.buildManager.initialize();
+        }
+
         // Initialiser l'Optimization Manager
         if (window.optimizationManager) {
             window.optimizationManager.initialize();
