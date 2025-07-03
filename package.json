@@ -1,6 +1,6 @@
 {
   "name": "frame-factory",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "FRAME Factory - Advanced Warframe Build Optimizer with Multi-language Support",
   "main": "index.html",
   "scripts": {
