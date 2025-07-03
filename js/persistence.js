@@ -6,7 +6,7 @@
 class PersistenceManager {
     constructor() {
         this.storageKey = 'frameFactory_data';
-        this.version = '0.1.3';
+        this.version = '0.1.4.5';
         this.data = this.loadData();
         this.autoSaveInterval = null;
         this.contributionWorker = null;
