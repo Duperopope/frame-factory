@@ -41,6 +41,7 @@ jobs:
           echo "✅ Files copied without any version modifications"
           echo "📁 Site contents:"
           ls -la _site/
+          echo "🔄 Force deployment at $(date)"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
