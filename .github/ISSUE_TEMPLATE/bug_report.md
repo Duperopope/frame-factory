@@ -30,7 +30,7 @@ If applicable, add screenshots to help explain your problem.
  - OS: [e.g. Windows 10, macOS, Linux]
 
 **FRAME Factory Information:**
- - Version: [e.g. v0.1.5.0]
+ - Version: [e.g. v0.1.6.0]
  - Language: [e.g. English, Français]
  - Tab: [e.g. Optimizer, Codex, Leaderboard]
 

@@ -5,7 +5,7 @@ All notable changes to FRAME Factory will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.5.0] - 2025-01-07 - Architecture Avancée
+## [0.1.6.0] - 2025-07-03 - SUPABASE Architecture
 
 ### 🚀 Major Features
 
@@ -268,4 +268,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**FRAME Factory v0.1.5.0 - Enterprise-grade Warframe Build Optimizer with advanced architecture, real-time community features, and AI-powered optimization!** 🚀
+**FRAME Factory v0.1.6.0 - Enterprise-grade Warframe Build Optimizer with advanced architecture, real-time community features, and AI-powered optimization!** 🚀
