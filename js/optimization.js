@@ -1,5 +1,5 @@
 /**
- * Optimization Manager - Gestion des calculs d'optimisation
+ * Optimization Manager - Interface avec le vrai moteur d'optimisation et Supabase
  */
 class OptimizationManager {
     constructor() {
@@ -10,6 +10,7 @@ class OptimizationManager {
         this.optimizationInterval = null;
         this.allItems = [];
         this.currentResults = [];
+        this.realEngine = null;
     }
 
     /**

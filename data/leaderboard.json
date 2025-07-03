@@ -1,0 +1,18 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-01-03T05:05:00.000Z",
+  "totalBuilds": 0,
+  "builds": [],
+  "metadata": {
+    "description": "Frame Factory Global Leaderboard - Top builds shared by the community",
+    "maxBuilds": 1000,
+    "sortBy": "score",
+    "categories": ["warframe", "primary", "secondary", "melee", "mixed"]
+  },
+  "stats": {
+    "totalOptimizations": 0,
+    "averageScore": 0,
+    "topScore": 0,
+    "uniqueUsers": 0
+  }
+}
