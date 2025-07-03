@@ -5,7 +5,107 @@ All notable changes to FRAME Factory will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [0.1.2] - 2025-07-03
+## [0.1.5.0] - 2025-01-07 - Architecture Avancée
+
+### 🚀 Major Features
+
+#### ✨ Real-time Leaderboard System
+- **Community Top 100 builds** shared across all users
+- **GitHub-powered data storage** (`data/leaderboard.json`)
+- **Auto-sync every 30 seconds** for real-time updates
+- **Live statistics** and performance metrics
+- **Passive contribution system** for community engagement
+
+#### 🔧 Advanced Build Manager
+- **Overframe-style interface** for professional build creation
+- **Template system** with reusable build configurations
+- **Auto-save functionality** with 1-minute intervals
+- **Build history** tracking last 50 optimizations
+- **Import/Export capabilities** for build sharing
+
+#### 🧠 AI-Powered Persistence System
+- **Machine learning integration** for build recommendations
+- **User preference tracking** and adaptation
+- **Performance metrics** collection and analysis
+- **Intelligent caching** with automatic optimization
+- **Data migration** system for version compatibility
+
+#### ⚙️ Multi-worker Optimization Engine
+- **Parallel processing simulation** for millions of combinations
+- **Real-time progress tracking** with ETA calculations
+- **Advanced algorithms** for different content types
+- **Faction-specific optimization** strategies
+- **Reproducible results** with seed-based generation
+
+### 🏗️ Architecture Improvements
+
+#### 📁 New File Structure
+```
+├── js/
+│   ├── leaderboard.js      # Real-time leaderboard management
+│   ├── build-manager.js    # Professional build creation
+│   └── persistence.js      # AI-powered data persistence
+├── data/
+│   └── leaderboard.json    # Community leaderboard data
+└── .github/workflows/
+    └── auto-deploy.yml     # Automated CI/CD pipeline
+```
+
+#### 🔄 Event-driven Communication
+- **Custom events** for inter-module communication
+- **Real-time updates** across all components
+- **State synchronization** between leaderboard and builds
+- **Performance monitoring** and optimization
+
+### 🎯 Enhanced User Experience
+
+#### 🏆 Leaderboard Features
+- **Top 100 builds** display with detailed metrics
+- **Real-time updates** from community contributions
+- **Build comparison** and analysis tools
+- **Performance statistics** dashboard
+
+#### 🛠️ Build Management
+- **Professional interface** similar to Overframe
+- **Drag & drop** build creation (foundation)
+- **Template library** for quick build starts
+- **Version control** for build iterations
+
+#### 📊 Advanced Analytics
+- **User contribution scoring** system
+- **Build effectiveness** analysis
+- **Community statistics** tracking
+- **Performance optimization** recommendations
+
+### 🚀 CI/CD Pipeline
+
+#### ⚙️ GitHub Actions Integration
+- **Automated deployment** on every push
+- **Cache busting** for instant updates
+- **Multi-environment** support (dev/prod)
+- **Error handling** and rollback capabilities
+
+#### 🔧 Development Workflow
+- **Automated testing** pipeline
+- **Code quality** checks
+- **Performance monitoring** integration
+- **Documentation** auto-generation
+
+### 🐛 Bug Fixes
+- **Version synchronization** across all files
+- **Translation system** consistency improvements
+- **Cache invalidation** for real-time updates
+- **Memory leak** prevention in long-running sessions
+
+### 📈 Performance Improvements
+- **Lazy loading** for leaderboard data
+- **Intelligent caching** with TTL management
+- **Event delegation** for better responsiveness
+- **Memory optimization** for large datasets
+
+---
+
+## [0.1.4.5] - 2025-01-07 - Enhanced Optimization
 
 ### 🎨 Enhanced Visual Design
 
@@ -29,9 +129,21 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 #### 📁 File Structure Updates
 - `css/themes.css` - New theme management system
 - Enhanced `css/components.css` with visual improvements
-- Updated `index.html` with v0.1.2 branding
+- Updated `index.html` with v0.1.4.5 branding
 
-## [0.1.1] - 2025-07-03
+---
+
+## [0.1.3.2] - 2025-01-07 - Core Stability
+
+### 🔧 Fixed
+- GitHub Pages configuration issues
+- Workflow deployment problems
+- Repository settings optimization
+- Translation system improvements
+
+---
+
+## [0.1.2] - 2025-01-07 - GitHub Pages Integration
 
 ### 🚀 GitHub Pages Deployment
 
@@ -45,7 +157,25 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Workflow deployment problems
 - Repository settings optimization
 
-## [0.1.0] - 2025-07-03
+---
+
+## [0.1.1] - 2025-01-07 - Foundation Release
+
+### 🚀 Initial Deployment
+
+#### ✨ Added
+- **GitHub Pages deployment** workflow configuration
+- **Automatic deployment** on push to main branch
+- **Production-ready** hosting setup
+
+#### 🔧 Fixed
+- GitHub Pages configuration issues
+- Workflow deployment problems
+- Repository settings optimization
+
+---
+
+## [0.1.0] - 2025-01-07 - Initial Release
 
 ### 🎉 Initial Release
 
@@ -138,4 +268,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
-**FRAME Factory v0.1.0 is now ready for production use with a professional, scalable architecture!** 🚀
+**FRAME Factory v0.1.5.0 - Enterprise-grade Warframe Build Optimizer with advanced architecture, real-time community features, and AI-powered optimization!** 🚀
