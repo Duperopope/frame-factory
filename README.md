@@ -1,7 +1,7 @@
-# 🚀 FRAME Factory v0.1.5.0 - Advanced Warframe Build Optimizer
+# 🚀 FRAME Factory v0.1.6.0 - Advanced Warframe Build Optimizer
 
 [![Live Demo](https://img.shields.io/badge/Live%20Demo-GitHub%20Pages-brightgreen)](https://duperopope.github.io/frame-factory/)
-[![Version](https://img.shields.io/badge/Version-0.1.5.0-blue)](https://github.com/Duperopope/frame-factory/releases)
+[![Version](https://img.shields.io/badge/Version-0.1.6.0-blue)](https://github.com/Duperopope/frame-factory/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![GitHub Actions](https://img.shields.io/badge/CI%2FCD-GitHub%20Actions-green)](https://github.com/Duperopope/frame-factory/actions)
 
@@ -181,7 +181,7 @@ Visit **[https://duperopope.github.io/frame-factory/](https://duperopope.github.
 
 ## 📈 Version History
 
-### v0.1.5.0 - Architecture Avancée *(Current)*
+### v0.1.6.0 - SUPABASE Architecture *(Current)*
 - ✅ **Real-time Leaderboard System** with GitHub integration
 - ✅ **Advanced Build Manager** with Overframe-style interface
 - ✅ **AI-powered Persistence** with machine learning
@@ -274,6 +274,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-**FRAME Factory v0.1.5.0 - The most advanced Warframe Build Optimizer with enterprise architecture, real-time community features, and AI-powered optimization!** 🚀
+**FRAME Factory v0.1.6.0 - The most advanced Warframe Build Optimizer with enterprise architecture, real-time community features, and AI-powered optimization!** 🚀
 
 *Built with ❤️ for the Warframe community*
