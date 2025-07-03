@@ -1,6 +1,17 @@
 /**
  * Main Application - Orchestration principale
  */
+
+// Helper pour échapper le HTML
+function escapeHTML(str) {
+    return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&#39;');
+}
+
 class WarframeApp {
     constructor() {
         this.allItems = [];
@@ -264,20 +275,45 @@ class WarframeApp {
             <div class="flex items-center space-x-3">
                 <div class="w-12 h-12 rounded-lg overflow-hidden flex-shrink-0">
                     ${imageUrl ? 
-                        `<img src="${imageUrl}" alt="${itemName}" class="w-full h-full object-cover" 
-                             onerror="this.parentElement.innerHTML='<div class=\\'placeholder-image w-full h-full\\'>?</div>'">` :
+                        `<img src="${imageUrl}" class="w-full h-full object-cover">` :
                         `<div class="placeholder-image w-full h-full"><i class="fas fa-question"></i></div>`
                     }
                 </div>
                 <div class="flex-1 min-w-0">
-                    <h3 class="font-semibold truncate" title="${itemName}">${itemName}</h3>
-                    <p class="text-sm text-secondary">${item.type || item.category || 'Unknown'}</p>
+                    <h3 class="font-semibold truncate"></h3>
+                    <p class="text-sm text-secondary"></p>
                     ${item.masteryReq ? `<p class="text-xs text-secondary">MR: ${item.masteryReq}</p>` : ''}
-                    ${itemDescription ? `<p class="text-xs text-secondary truncate" title="${itemDescription}">${itemDescription}</p>` : ''}
+                    ${itemDescription ? `<p class="text-xs text-secondary truncate"></p>` : ""}
                 </div>
             </div>
         `;
         
+        const titleEl = div.querySelector('h3');
+        titleEl.textContent = itemName;
+        titleEl.setAttribute('title', itemName);
+
+        const typeEl = div.querySelector('p.text-sm.text-secondary');
+        if (typeEl) {
+            typeEl.textContent = item.type || item.category || 'Unknown';
+        }
+
+        if (imageUrl) {
+            const imgEl = div.querySelector('img');
+            if (imgEl) {
+                imgEl.alt = itemName;
+                imgEl.onerror = function() {
+                    this.parentElement.innerHTML = '<div class="placeholder-image w-full h-full">?</div>';
+                };
+            }
+        }
+
+        if (itemDescription) {
+            const descEl = div.querySelector('p.text-xs.text-secondary.truncate');
+            if (descEl) {
+                descEl.textContent = itemDescription;
+                descEl.setAttribute('title', itemDescription);
+            }
+        }
         // Ajouter un tooltip avec les statistiques
         const stats = window.warframeAPI.getItemStats(item);
         if (Object.keys(stats).length > 0) {
